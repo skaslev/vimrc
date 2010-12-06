@@ -15,6 +15,7 @@ nmap <leader>w :set list!<CR>
 nmap <leader>f :FufFile<CR>
 nmap <leader>b :FufBuffer<CR>
 nmap <leader>t :NERDTree<CR>
+cmap w!! %!sudo tee > /dev/null %
 
 au BufRead,BufNewFile	*.cl		setlocal filetype=c
 au BufRead,BufNewFile	*.py		setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
