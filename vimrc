@@ -9,6 +9,7 @@ set autoindent cindent
 set incsearch ignorecase smartcase
 set scrolloff=2
 if has("gui_running")
+	set guifont=Inconsolata\ 14
 	set lines=9999 columns=9999
 endif
 au BufRead,BufNewFile *.cl       setlocal filetype=c
