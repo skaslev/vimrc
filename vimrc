@@ -1,26 +1,27 @@
 syntax on
 colorscheme zenburn
 filetype plugin indent on
-set number
-set hidden
-set visualbell
-set autoread nobackup
+set number visualbell
 set autoindent cindent
-set incsearch ignorecase smartcase
+set autoread hidden nobackup
+set incsearch hlsearch ignorecase smartcase
 set scrolloff=2
+set listchars=tab:>-,trail:·,eol:$
+let mapleader=" "
+
+nmap <leader>n :bn<CR>
+nmap <leader>p :bp<CR>
+nmap <leader>w :set list!<CR>
+nmap <leader>f :FufFile<CR>
+nmap <leader>b :FufBuffer<CR>
+nmap <leader>t :NERDTree<CR>
+
+au BufRead,BufNewFile	*.cl		setlocal filetype=c
+au BufRead,BufNewFile	*.py		setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au BufRead,BufNewFile	SCons*		setlocal filetype=python tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au BufWritePre		*		normal m`:%s/\s\+$//e``
+
 if has("gui_running")
 	set guifont=Inconsolata\ 14
 	set lines=9999 columns=9999
 endif
-
-au BufRead,BufNewFile *.cl       setlocal filetype=c
-au BufRead,BufNewFile *.py       setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
-au BufRead,BufNewFile SConstruct setlocal filetype=python tabstop=4 expandtab shiftwidth=4 softtabstop=4
-au BufRead,BufNewFile SConscript setlocal filetype=python tabstop=4 expandtab shiftwidth=4 softtabstop=4
-au BufWritePre        *          normal m`:%s/\s\+$//e``
-
-nmap ,t :NERDTree<CR>
-nmap ,f :FufFile<CR>
-nmap ,b :FufBuffer<CR>
-nmap ,n :bn<CR>
-nmap ,p :bp<CR>
