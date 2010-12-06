@@ -12,6 +12,7 @@ if has("gui_running")
 	set guifont=Inconsolata\ 14
 	set lines=9999 columns=9999
 endif
+
 au BufRead,BufNewFile *.cl       setlocal filetype=c
 au BufRead,BufNewFile *.py       setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au BufRead,BufNewFile SConstruct setlocal filetype=python tabstop=4 expandtab shiftwidth=4 softtabstop=4
