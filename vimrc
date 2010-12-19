@@ -9,6 +9,8 @@ set scrolloff=2
 set listchars=tab:>-,trail:·,eol:$
 let mapleader=" "
 
+vmap <leader>x "+x
+vmap <leader>c "+y
 nmap <leader>v "+gP
 nmap <leader>n :bn<CR>
 nmap <leader>p :bp<CR>
