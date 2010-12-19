@@ -13,6 +13,7 @@ nmap <leader>v "+gP
 nmap <leader>n :bn<CR>
 nmap <leader>p :bp<CR>
 nmap <leader>d :bd<CR>
+nmap <leader>D :bd!<CR>
 nmap <leader>w :set list!<CR>
 nmap <leader>f :FufFile<CR>
 nmap <leader>b :FufBuffer<CR>
