@@ -12,6 +12,8 @@ let mapleader=" "
 vmap <leader>x "+x
 vmap <leader>c "+y
 nmap <leader>v "+gP
+nmap <leader>j <C-f>
+nmap <leader>k <C-b>
 nmap <leader>n :bn<CR>
 nmap <leader>p :bp<CR>
 nmap <leader>d :bd<CR>
