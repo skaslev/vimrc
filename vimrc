@@ -1,5 +1,5 @@
 syntax on
-colorscheme zenburn
+colorscheme wombat256
 filetype plugin indent on
 set number visualbell
 set autoindent cindent
