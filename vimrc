@@ -1,7 +1,7 @@
 syntax on
 colorscheme wombat256
 filetype plugin indent on
-set number visualbell
+set visualbell
 set autoindent cindent
 set autoread hidden nobackup
 set incsearch hlsearch ignorecase smartcase
@@ -12,13 +12,14 @@ let mapleader=" "
 vmap <leader>x "+x
 vmap <leader>c "+y
 nmap <leader>v "+gP
-nmap <leader>j <C-f>
-nmap <leader>k <C-b>
+nmap <leader>j <C-d><C-d>
+nmap <leader>k <C-u><C-u>
 nmap <leader>n :bn<CR>
 nmap <leader>p :bp<CR>
 nmap <leader>d :bd<CR>
 nmap <leader>D :bd!<CR>
 nmap <leader>w :set list!<CR>
+nmap <leader>l :set number!<CR>
 nmap <leader>f :FufFile<CR>
 nmap <leader>b :FufBuffer<CR>
 nmap <leader>t :NERDTree<CR>
