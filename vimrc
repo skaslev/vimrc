@@ -1,5 +1,9 @@
 syntax on
-colorscheme wombat256
+set background=light
+if !has('gui_running')
+	let g:solarized_termcolors=256
+endif
+colorscheme solarized
 filetype plugin indent on
 set visualbell
 set autoindent cindent
