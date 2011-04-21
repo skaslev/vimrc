@@ -5,7 +5,7 @@ if !has('gui_running')
 endif
 colorscheme solarized
 filetype plugin indent on
-set visualbell
+set ruler, visualbell
 set autoindent cindent
 set autoread hidden nobackup
 set incsearch hlsearch ignorecase smartcase
