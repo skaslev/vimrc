@@ -1,13 +1,12 @@
+filetype off
+call pathogen#runtime_append_all_bundles()
+
 syntax on
-set background=light
-if !has('gui_running')
-	let g:solarized_termcolors=256
-endif
-colorscheme solarized
+colorscheme wombat256
 filetype plugin indent on
 set autoindent cindent
 set autoread hidden nobackup
-set number cursorline ruler visualbell
+set cursorline ruler visualbell
 set incsearch hlsearch ignorecase smartcase
 set scrolloff=2
 set listchars=tab:>-,trail:·,eol:$
@@ -31,6 +30,9 @@ cmap w!! %!sudo tee > /dev/null %
 
 au BufRead,BufNewFile	*.cl		setlocal filetype=c
 au BufRead,BufNewFile	*.py		setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au BufRead,BufNewFile	*.js		setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au BufRead,BufNewFile	*.html		setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au BufRead,BufNewFile	*.coffee	setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au BufRead,BufNewFile	SCons*		setlocal filetype=python tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au BufWritePre		*		normal m`:%s/\s\+$//e``
 
