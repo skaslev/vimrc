@@ -8,6 +8,7 @@ set autoindent cindent
 set autoread hidden nobackup
 set cursorline ruler visualbell
 set incsearch hlsearch ignorecase smartcase
+set laststatus=2
 set scrolloff=2
 set listchars=tab:>-,trail:·,eol:$
 let mapleader=" "
