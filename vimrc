@@ -33,6 +33,7 @@ au BufRead,BufNewFile	*.cl		setlocal filetype=c
 au BufRead,BufNewFile	*.cpp		setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au BufRead,BufNewFile	*.py		setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au BufRead,BufNewFile	*.js		setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au BufRead,BufNewFile	*.css		setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au BufRead,BufNewFile	*.html		setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au BufRead,BufNewFile	*.coffee	setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au BufRead,BufNewFile	SCons*		setlocal filetype=python tabstop=4 expandtab shiftwidth=4 softtabstop=4
