@@ -6,10 +6,9 @@ colorscheme wombat256
 filetype plugin indent on
 set autoindent cindent
 set autoread hidden nobackup
-set cursorline ruler visualbell
+set cursorline number ruler visualbell
 set incsearch hlsearch ignorecase smartcase
-set laststatus=2
-set scrolloff=2
+set laststatus=2 scrolloff=2 t_Co=256
 set listchars=tab:>-,trail:·,eol:$
 let mapleader=" "
 
