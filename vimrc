@@ -28,15 +28,10 @@ nmap <leader>b :FufBuffer<CR>
 nmap <leader>t :NERDTree<CR>
 cmap w!! %!sudo tee > /dev/null %
 
+set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au BufRead,BufNewFile	*.go		setlocal noexpandtab
 au BufRead,BufNewFile	*.cl		setlocal filetype=c
-au BufRead,BufNewFile	*.cpp		setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
-au BufRead,BufNewFile	*.cc		setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
-au BufRead,BufNewFile	*.py		setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
-au BufRead,BufNewFile	*.js		setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
-au BufRead,BufNewFile	*.css		setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
-au BufRead,BufNewFile	*.html		setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
-au BufRead,BufNewFile	*.coffee	setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
-au BufRead,BufNewFile	SCons*		setlocal filetype=python tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au BufRead,BufNewFile	SCons*	setlocal filetype=python
 au BufWritePre		*		normal m`:%s/\s\+$//e``
 
 if has("gui_running")
