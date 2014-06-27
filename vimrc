@@ -1,9 +1,9 @@
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 syntax on
-colorscheme wombat256
 filetype plugin indent on
+colorscheme wombat256
 set autoindent cindent
 set autoread hidden nobackup
 set cursorline number ruler visualbell
@@ -28,13 +28,21 @@ nmap <leader>b :FufBuffer<CR>
 nmap <leader>t :NERDTree<CR>
 cmap w!! %!sudo tee > /dev/null %
 
-set tabstop=2 expandtab shiftwidth=2 softtabstop=2
-au BufRead,BufNewFile	*.go		setlocal noexpandtab
-au BufRead,BufNewFile	*.cl		setlocal filetype=c
-au BufRead,BufNewFile	SCons*	setlocal filetype=python
-au BufWritePre		*		normal m`:%s/\s\+$//e``
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+\%#\@<!$/
+
+au BufRead,BufNewFile  *.cl    setlocal filetype=c
+au BufRead,BufNewFile  *.cpp   setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au BufRead,BufNewFile  *.cc    setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au BufRead,BufNewFile  *.go    setlocal tabstop=2 noexpandtab shiftwidth=2 softtabstop=2
+au BufRead,BufNewFile  *.py    setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au BufRead,BufNewFile  *.js    setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au BufRead,BufNewFile  *.css   setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au BufRead,BufNewFile  *.html  setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au BufRead,BufNewFile  SCons*  setlocal filetype=python tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au BufWritePre         *       normal m`:%s/\s\+$//e``
 
 if has("gui_running")
-	set guifont=Inconsolata\ 14
-	set lines=9999 columns=9999
+  set guifont=Inconsolata\ 14
+  set lines=9999 columns=9999
 endif
