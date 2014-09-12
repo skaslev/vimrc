@@ -4,6 +4,7 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 colorscheme wombat256
+set autochdir
 set autoindent cindent
 set autoread hidden nobackup
 set cursorline number ruler visualbell
