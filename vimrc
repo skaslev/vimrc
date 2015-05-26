@@ -3,7 +3,8 @@ call pathogen#infect()
 
 syntax on
 filetype plugin indent on
-colorscheme wombat256
+set background=dark
+colorscheme solarized
 set autochdir
 set autoindent cindent
 set autoread hidden nobackup
