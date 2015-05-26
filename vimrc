@@ -5,6 +5,7 @@ syntax on
 filetype plugin indent on
 set background=dark
 colorscheme solarized
+let g:solarized_termcolors=256
 set autochdir
 set autoindent cindent
 set autoread hidden nobackup
