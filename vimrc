@@ -3,9 +3,12 @@ call pathogen#infect()
 
 syntax on
 filetype plugin indent on
-set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
+if has("gui_running")
+  set background=dark
+  colorscheme solarized
+else
+  colorscheme wombat256
+endif
 set autochdir
 set autoindent cindent
 set autoread hidden nobackup
