@@ -11,7 +11,7 @@ else
 endif
 set autochdir
 set autoindent cindent
-set autoread hidden nobackup
+set autoread hidden nobackup noswapfile
 set cursorline number ruler visualbell
 set incsearch hlsearch ignorecase smartcase
 set laststatus=2 scrolloff=2 t_Co=256
