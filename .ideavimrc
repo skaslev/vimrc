@@ -1,0 +1,25 @@
+set clipboard+=unnamed
+set cindent
+set hidden nobackup noswapfile
+set cursorline number visualbell
+set incsearch hlsearch ignorecase smartcase
+set scrolloff=2 t_Co=256
+let mapleader=" "
+
+vmap <leader>x "+x
+vmap <leader>c "+y
+nmap <leader>v "+gP
+nmap <leader>j <C-d><C-d>
+nmap <leader>k <C-u><C-u>
+nmap <leader>n :bn<CR>
+nmap <leader>p :bp<CR>
+nmap <leader>d :bd<CR>
+nmap <leader>D :bd!<CR>
+nmap <leader>w :set list!<CR>
+nmap <leader>l :set number!<CR>
+nmap <leader>e :action SearchEverywhere<CR>
+nmap <leader>f :action GotoFile<CR>
+nmap <leader>b :action RecentFiles<CR>
+nmap <leader>t :action ActivateProjectToolWindow<CR>
+cmap w!! %!sudo tee > /dev/null %
+
