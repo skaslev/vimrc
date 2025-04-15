@@ -21,5 +21,6 @@ nmap <leader>e :action SearchEverywhere<CR>
 nmap <leader>f :action GotoFile<CR>
 nmap <leader>b :action RecentFiles<CR>
 nmap <leader>t :action ActivateProjectToolWindow<CR>
+nmap <leader>r :action ShowUsages<CR>
+nmap gr :action ShowUsages<CR>
 cmap w!! %!sudo tee > /dev/null %
-
